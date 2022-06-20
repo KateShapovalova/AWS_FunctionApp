@@ -1,0 +1,8 @@
+# DO NOT include azure-functions-worker in this file
+# The Python Worker is managed by Azure Functions platform
+# Manually managing azure-functions-worker may cause unexpected issues
+
+azure-storage-file-share==12.8.0
+azure-functions==1.11.2
+boto3==1.24.10
+botocore==1.27.10
