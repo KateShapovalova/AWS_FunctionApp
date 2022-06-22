@@ -17,7 +17,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             paginator = iam.get_paginator('list_access_keys')
             try:
                 for response in paginator.paginate(UserName=username):
-                    response_list.append(response["AccessKeyMetadata"])
+                    response_list.append(response["AccessKeyMetadata"]["AccessKeyId"])
                 response_list = [response for sublist in response_list for response in sublist]
             except iam.exceptions.NoSuchEntityException as err:
                 return func.HttpResponse(str(err), status_code=404)
