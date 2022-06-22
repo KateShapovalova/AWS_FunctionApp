@@ -57,7 +57,7 @@
     },
     "packageUri": {
       "type": "string",
-      "defaultValue": "https://github.com/vu-socprime/testfuncapp/raw/main/funcapp.zip",
+      "defaultValue": "https://github.com/KateShapovalova/AWS_FunctionApp/raw/main/funcapp.zip",
       "metadata": {
         "description": "The zip content url."
       }
